@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Book(models.Model):
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=120)
     available_copies = models.IntegerField()
     date_added = models.DateTimeField(default=datetime.now(), blank=True)
     img_url = models.CharField(max_length=255)
